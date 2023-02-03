@@ -1,0 +1,91 @@
+Info JS:
+undefined indicates the absence of a value, 
+while null indicates the absence of an object
+“dynamically typed”, meaning that there exist data types, but variables are not bound to any of them.
+Symbols are called "atoms": The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
+Type Coersion: his means that you can often use a value of one type where another type is expected, and the language will convert it to the right type for you.
+
+In JavaScript, there are 3 types of quotes.
+Double quotes: "Hello".
+Single quotes: 'Hello'.
+Backticks: `Hello`.
+Double and single quotes are “simple” quotes. There’s practically no difference between them in JavaScript.
+Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}
+
+Null value: It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+The meaning of undefined is “value is not assigned”.
+
+The Number() function takes in an argument and returns back a number equivalent of the given value.
+Usually the argument is a string, but could be any value in JavaScript.
+Shown below is the conversion table:
+Value	            Numeric equivalent
+Number	            The number itself
+'' (empty string)	0
+Non-empty string	Parsed
+true	            1
+false	            0
+undefined	        NaN
+null	            0
+Object	            Parsed
+
+A primitive data type is data that has a primitive value.
+JavaScript defines 7 types of primitive data types:
+Immutable: Primitive values are immutable (they are hardcoded and cannot be changed).
+string
+number
+boolean
+null
+undefined
+symbol
+bigint
+
+In JavaScript, almost "everything" is an object.
+Booleans can be objects (if defined with the new keyword)
+Numbers can be objects (if defined with the new keyword)
+Strings can be objects (if defined with the new keyword)
+Dates are always objects
+Maths are always objects
+Regular expressions are always objects
+Arrays are always objects
+Functions are always objects
+Objects are always objects
+All JavaScript values, except primitives, are objects.
+
+
+Awesome job on clearing the iterators lesson! You have learned a number of useful methods in this lesson as well as how to use the JavaScript documentation from the Mozilla Developer Network to discover and understand additional methods. Let’s review!
+.forEach() is used to execute the same code on every element in an array but does not change the array and returns undefined.
+.map() executes the same code on every element in an array and returns a new array with the updated elements.
+.filter() checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.
+.findIndex() returns the index of the first element of an array that satisfies a condition in the callback function. It returns -1 if none of the elements in the array satisfies the condition.
+.reduce() iterates through an array and takes the values of the elements and returns a single value.
+All iterator methods take a callback function, which can be a pre-defined function, a function expression, or an arrow function.
+You can visit the Mozilla Developer Network to learn more about iterator methods (and all other parts of JavaScript!).
+
+const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
+
+Add module to import js file to other js file:
+{
+  "name": "jsday5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module", <- this one
+
+Mutable Array Methods in JavaScript
+And reverse isn’t the only array method that causes this sort of mutation mischief. Here’s a list of array methods that mutate the array they’re called on:
+
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.shift()
+Array.prototype.unshift()
+Array.prototype.reverse()
+Array.prototype.sort()
+Array.prototype.splice()
+
+
+Slightly confusingly, arrays also have some methods that don’t mutate the original array, but return a new array instead:
+
+Array.prototype.slice()
+Array.prototype.concat()
+Array.prototype.map()
+Array.prototype.filter()
