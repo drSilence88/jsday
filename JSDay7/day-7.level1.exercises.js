@@ -61,3 +61,16 @@ console.log(density(5, 4));
 
 //10.- Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. 
 //Write a function which calculates a speed of a moving object, speed.
+function objectSpeed(distance, time) {
+    let speed = 0;
+    return speed = time / distance;
+}
+console.log("Speed: " + objectSpeed(200, 1200));
+
+//11.- Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
+function weight(mass, gravity) {
+    let weight = 0;
+    return weight = mass * gravity;
+}
+console.log("Weight: " + weight(80, 10));
+
